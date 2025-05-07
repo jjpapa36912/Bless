@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "554728490287",
+    "project_id": "joyfulbless-4427a",
+    "storage_bucket": "joyfulbless-4427a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554728490287:android:0b38ff80a05f1a22908dda",
+        "android_client_info": {
+          "package_name": "com.joyful.bless"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLkJWr13bKsKVykKRfDzntSb2XeJsGJnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

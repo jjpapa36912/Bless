@@ -1,0 +1,66 @@
+pluginManagement {
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+
+    repositories {
+        google()                // ✅ 이것이 반드시 있어야 함!
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "frontend"
+
+include(":app")
+include(":react-native-google-signin")
+project(":react-native-google-signin").projectDir = new File(rootProject.projectDir, "../node_modules/@react-native-google-signin/google-signin/android")
+
+include(":react-native-gesture-handler")
+project(":react-native-gesture-handler").projectDir = new File(rootProject.projectDir, "../node_modules/react-native-gesture-handler/android")
+
+// ✅ 🔹 Apple Authentication
+//include(":invertase_react-native-apple-authentication")
+//project(":invertase_react-native-apple-authentication").projectDir = new File(rootProject.projectDir, "../node_modules/@invertase/react-native-apple-authentication/android")
+
+// ✅ 🔹 Reanimated
+include(":react-native-reanimated")
+project(":react-native-reanimated").projectDir = new File(rootProject.projectDir, "../node_modules/react-native-reanimated/android")
+
+// ✅ 🔹 Screens
+include(":react-native-screens")
+project(":react-native-screens").projectDir = new File(rootProject.projectDir, "../node_modules/react-native-screens/android")
+
+// ✅ 🔹 Safe Area Context
+include(":react-native-safe-area-context")
+project(":react-native-safe-area-context").projectDir = new File(rootProject.projectDir, "../node_modules/react-native-safe-area-context/android")
+
+////pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
+////plugins { id("com.facebook.react.settings") }
+////extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+////rootProject.name = 'frontend'
+////include ':app'
+////includeBuild('../node_modules/@react-native/gradle-plugin')
+//// Top of settings.gradle.kts
+//pluginManagement {
+//    includeBuild("../node_modules/@react-native/gradle-plugin")
+//
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//    }
+//}
+//
+////plugins {
+////    id("com.facebook.react") version("0.76.9")
+////}
+//
+//rootProject.name = "frontend"
+//
+//include(":app")
+//include(":invertase_react-native-apple-authentication")
+//include(":react-native-google-signin")
+//project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-google-signin/google-signin/android')
+//
+//include(":react-native-gesture-handler")
+//project(":react-native-gesture-handler").projectDir = new File(rootProject.projectDir, "../node_modules/react-native-gesture-handler/android")
+//
